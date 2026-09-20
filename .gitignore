@@ -1,0 +1,74 @@
+# ---------- 敏感配置：绝对不要提交 ----------
+.env
+.env.*
+!.env.example
+api/.env
+api/.env.*
+!api/.env.example
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.installed.cfg
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 测试 / 类型检查缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- 前端 ----------
+node_modules/
+xwzx-news/node_modules/
+xwzx-news/dist/
+xwzx-news/.vite/
+xwzx-news/.env
+xwzx-news/.env.*
+!xwzx-news/.env.example
+static/
+*.local
+
+# 包管理器日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- Redis / 数据库本地文件 ----------
+dump.rdb
+*.rdb
+*.sql
+*.sqlite
+*.sqlite3
+
+# ---------- 本地下载的第三方运行时（体积大，不入库） ----------
+# Windows 版 Redis 解压目录，由 start-redis.bat 使用
+tools/
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 日志 ----------
+*.log
+logs/

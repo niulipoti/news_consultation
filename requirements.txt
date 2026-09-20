@@ -1,0 +1,29 @@
+# 新闻资讯后端依赖
+# 安装：pip install -r requirements.txt
+
+# --- Web 框架 ---
+fastapi==0.141.1
+uvicorn==0.52.4
+starlette==1.6.0
+
+# --- 数据校验 / 配置 ---
+pydantic==2.13.5
+pydantic_core==2.46.5
+python-dotenv==1.2.3
+
+# --- 数据库 ---
+SQLAlchemy==2.0.52
+aiomysql==0.3.2
+PyMySQL==1.2.0
+greenlet==3.5.5
+
+# --- 缓存 ---
+redis==8.1.0
+
+# --- 密码加密 ---
+passlib==1.7.4
+bcrypt==4.0.1
+
+# --- AI 对话（DeepSeek 兼容 OpenAI 协议）---
+openai==3.16.2
+httpx2==2.13.0
